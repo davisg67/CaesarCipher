@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #fafafa;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    /* text-align: center; */
+    font-size: 20px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    width: 400px;  
+    width: 30%;
+} 
+
+.contentElement {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#input {
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#shift-label {
+    margin-right: 10px;
+}
+
+#shiftValue {
+    width: 50px;
+    text-align: center;
+}
+
+#outputElement {
+    margin-top: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    font-size: 14px;
+} 
+
+p {
+    margin-bottom: 10px;
+} 
+
+.button {
+    background-color: #fafafa;
+    border: 2px solid #eee;
+    border: 2px solid #8c8c8c;
+    width: 90px;
+    height: 30px;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    
+    /*Gradient*/
+    background-image: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    
+    /*Shadow*/
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+
+    /*Transition*/
+    transition: All 0.5s ease;
+}
+
+.button:hover {
+    background-color: #8c8c8c;
+}
+
+.btn-space {
+    margin-left: 10px;
+}
+
+#btn_clear {
+    margin-left: 40px;
+}
+
+#results {
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+} 
+
+
+
+@media all and (max-width: 999px) {
+    #content {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #content {
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 320px) {
+    header {
+        font-size: 18px;
+    }
+}

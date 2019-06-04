@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="author" content="Gregory Davis">
+    <meta name="description" content="Caesars Cipher">
+
+    <title>Caesar Cipher</title>
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> 
+  </head>
+
+  <body>
+      <header>
+          <h1 id="title">Caesar Cipher</h1>
+      </header>
+      
+      <section>
+        <div id="content">
+           <div class="contentElement">
+              <label>Input</label> 
+           </div>
+
+           <div class="contentElement">
+              <textarea id="input"></textarea>
+           </div>
+            
+           <div class="contentElement">
+              <span id="shift-label">Shift:</span>
+              <input id="shiftValue" type="number" name="shiftValue" min="1" max="25" value="13">
+           </div>
+            
+            <div class="contentElement">
+                <button id="btnEncode" class="button" type="button">Encode</button>  
+                <button id="btnDecode" class="button btn-space" type="button">Decode</button>  
+                <button id="btn_clear" class="button" type="button">Clear</button>
+            </div>
+
+            <div id="outputElement" class="contentElement">
+              <label>Output</label> 
+           </div>
+
+            <div class="contentElement"> 
+                <textarea id="results"></textarea>
+            </div> 
+        </div>
+      </section>
+      
+      <footer>
+        <div>
+          <p>One of the simplest and most widely known ciphers is a <a href="https://en.wikipedia.org/wiki/Caesar_cipher" target="_blank">Caesar cipher</a>, 
+            also known as a shift cipher. In a shift cipher the meanings of the letters are shifted by some set amount.</p>
+
+          <p>A common modern use is the <a href="https://en.wikipedia.org/wiki/ROT13" target="_blank">ROT13</a> cipher, where the values of the letters are shifted by 13 places. Thus 'A' ↔ 'N', 'B' ↔ 'O' and so on.</p>
+        </div>
+      </footer> 
+    
+      <script type="text/javascript" src="js/scripts.js"></script>
+  </body>
+</html>
